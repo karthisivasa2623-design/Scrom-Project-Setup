@@ -14,77 +14,59 @@ Steps: PlayCanvas to SCORM File Conversion
 1. Export the Project from PlayCanvas
 
   Open your project in the PlayCanvas Editor.
-
   On the left-side vertical menu, click Publish / Download.
-
   The Build tab will be displayed.
-
   Under Publish to PlayCanvas / Download, select Download.zip.
-
   Configure the build settings:
-
-  Enter the Title
-
-  Select the Engine Version
-
-  Enable Optimize Scene Format
-
-  Under Choose Scene, select Main
-  (If your project uses a different starting scene, select that scene instead.)
-
-  Click DOWNLOAD.
-
-  Once the build is complete, click DOWNLOAD again to download the ZIP file.
-
+      Enter the Title
+      Select the Engine Version
+      Enable Optimize Scene Format
+      Under Choose Scene, select Main
+      (If your project uses a different starting scene, select that scene instead.)
+      Click DOWNLOAD.
+      Once the build is complete, click DOWNLOAD again to download the ZIP file.
   Result:
     You will now have the exported PlayCanvas project as a ZIP file.
 
   2. Extract the Downloaded ZIP File
 
     Create a new folder to manage all SCORM-related files.
-
     Extract the downloaded PlayCanvas ZIP file into this folder.
-
-  Note:
-    It is recommended to perform all steps inside this single folder to avoid confusion.
+    Note:
+      It is recommended to perform all steps inside this single folder to avoid confusion.
 
 3. Add Required SCORM Files
 
   Download the required files from the provided GitHub repository.
-
   Copy these files into the extracted PlayCanvas project folder.
-
   When prompted, allow the system to replace the existing index.html file.
 
 4. Place the scorm.json File
 
   Place the scorm.json file in the main folder using the following structure:
 
-  Main_Folder
-  │
-  ├── PlayCanvas_Exported_Project
-  │     └── (Contains replaced index.html and other PlayCanvas files)
-  │
-  └── scorm.json
+    Main_Folder
+    │
+    ├── PlayCanvas_Exported_Project
+    │     └── (Contains replaced index.html and other PlayCanvas files)
+    │
+    └── scorm.json
 
 5. Open Command Prompt in the Folder
 
   Open the Main_Folder.
-
   Click on the folder address bar.
-
   Type cmd and press Enter.
-
   This will open the Command Prompt directly in the correct directory.
 
-6. Install and Run the SCORM Packager
-  First-time use only:
-    npm install -g simple-scorm-packager
+  6. Install and Run the SCORM Packager
+     
+    First-time use only:
+       npm install -g simple-scorm-packager
+    To create the SCORM package:
+      npx simple-scorm-packager scorm.json
 
-  To create the SCORM package:
-    npx simple-scorm-packager scorm.json
-
-7. Enter SCORM Configuration Details
+8. Enter SCORM Configuration Details
 
   When prompted, provide the following details:
 
@@ -105,13 +87,11 @@ Steps: PlayCanvas to SCORM File Conversion
 8. SCORM Package Creation
 
   A new folder named scorm will be generated.
-
   Inside this folder, a ZIP file containing the SCORM package will be available.
 
 9. Upload the SCORM Package
 
   Upload the generated SCORM ZIP file to your Learning Management System (LMS).
-
   The PlayCanvas project is now ready to run as a SCORM course.
 
   Notes
