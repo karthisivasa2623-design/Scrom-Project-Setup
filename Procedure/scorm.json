@@ -1,0 +1,28 @@
+{
+  "version":         "1.2",
+  "title":           "SCORM Hospital Quiz",
+  "organization":    "test",
+  "language":        "en-US",
+  "masteryScore":    80,
+  "startingPage":    "index.html",
+  "identifier":      "SCORMHospitalBG",
+  "uniqueIdentifier":"d9f33542-0399-4179-898d-373ab744505b",
+
+  "source":          "./content",        
+  "metadata":        "metadata.xml",
+  "schemas": [
+    "imscp_rootv1p1p2.xsd",
+    "adlcp_rootv1p2.xsd",
+    "imsmd_rootv1p2p1.xsd",
+    "ims_xml.xsd"
+  ],
+
+  "package": {
+    "zip":            true,
+    "outputFolder":   "./scorm_build",
+    "name":           "SCORMHospitalBG",
+    "author":         "Your Name",
+    "version":        "1.0.0",
+    "date":           "2025-07-14"
+  }
+}
