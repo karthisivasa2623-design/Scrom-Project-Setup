@@ -12,18 +12,18 @@ The main purpose of this document is to provide a detailed step-by-step procedur
 
 Steps: PlayCanvas to SCORM File Conversion
 1.     Export the Project from PlayCanvas
-        Open your project in the PlayCanvas Editor.
-        On the left-side vertical menu, click Publish / Download.
-        The Build tab will be displayed.
-        Under Publish to PlayCanvas / Download, select Download.zip.
-          Configure the build settings:
-            Enter the Title
-            Select the Engine Version
-            Enable Optimize Scene Format
-            Under Choose Scene, select Main
-            (If your project uses a different starting scene, select that scene instead.)
-              Click DOWNLOAD.
-              Once the build is complete, click DOWNLOAD again to download the ZIP file.
+        a.Open your project in the PlayCanvas Editor.
+        b. On the left-side vertical menu, click Publish / Download.
+        c. The Build tab will be displayed.
+        d. Under Publish to PlayCanvas / Download, select Download.zip.
+        e. Configure the build settings:
+            -Enter the Title
+            -Select the Engine Version
+            -Enable Optimize Scene Format
+            -Under Choose Scene, select Main
+                    (If your project uses a different starting scene, select that scene instead.)
+             -Click DOWNLOAD.
+           Once the build is complete, click DOWNLOAD again to download the ZIP file.
           Result:
             You will now have the exported PlayCanvas project as a ZIP file.
 
