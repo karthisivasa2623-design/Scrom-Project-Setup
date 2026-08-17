@@ -63,7 +63,7 @@ Steps: PlayCanvas to SCORM File Conversion
     First-time use only:
        npm install -g simple-scorm-packager
     To create the SCORM package:
-      npx simple-scorm-packager scorm.json
+      node inject-scorm-links.js && npx simple-scorm-packager scorm.json
 
 8. Enter SCORM Configuration Details
 
